@@ -69,7 +69,7 @@ class PlacesApi
      * @param bool $verifySSL
      * @param array $headers
      */
-    public function __construct(string $key = null, bool $verifySSL = true, array $headers = [])
+    public function __construct(?string $key = null, bool $verifySSL = true, array $headers = [])
     {
         $this->key = $key;
         
