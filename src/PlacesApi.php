@@ -114,7 +114,7 @@ class PlacesApi
      * @throws \SKAgarwal\GoogleApi\Exceptions\GooglePlacesApiException
      * @return \Illuminate\Support\Collection
      */
-    public function nearbySearch(string $location, string $radius = null, array $params = []): Collection
+    public function nearbySearch(string $location, ?string $radius = null, array $params = []): Collection
     {
         $this->checkKey();
         
